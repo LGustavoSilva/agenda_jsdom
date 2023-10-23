@@ -1,6 +1,6 @@
 const form = document.getElementById('form-contact')
 const nomeContato = []
-const numuroContato = []
+const numeroContato = []
 
 
 let linhas = ''
@@ -20,12 +20,12 @@ function inserirContato() {
     if (nomeContato.includes(inputNomeContato.value)) {
         alert(`o Contato ${inputNomeContato.value} já existe`)
     }
-    else if (numuroContato.includes(inputNumberContato.value)) {
+    else if (numeroContato.includes(inputNumberContato.value)) {
         alert(`o Número ${inputNumberContato.value} já pertence a outro Contato`)
     }
     else{
         nomeContato.push(inputNomeContato.value)
-        numuroContato.push(inputNumberContato.value)
+        numeroContato.push(inputNumberContato.value)
 
         let linha = '<tr>'
 
